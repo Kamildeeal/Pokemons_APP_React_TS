@@ -10,9 +10,11 @@ function App() {
   return (
     <PokemonProvider>
       <div className="app-wrapper">
-        <Header />
-        <RouterProvider router={router} />
-        <Footer />
+        <div className="content">
+          <Header />
+          <RouterProvider router={router} />
+          <Footer />
+        </div>
       </div>
     </PokemonProvider>
   );

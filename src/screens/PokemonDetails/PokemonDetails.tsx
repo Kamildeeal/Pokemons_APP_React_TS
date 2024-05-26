@@ -31,8 +31,7 @@ const PokemonDetails = () => {
         </div>
         <div className="pokemonDetailsContainter">
           <h2>
-            {addLeadingZero(currentPokemon)}
-            {currentPokemon.name}
+            {addLeadingZero(currentPokemon)} {currentPokemon.name}
           </h2>
           <img src={currentPokemon.sprites.front_default} alt="logo" />
           <p>Abilities: {abilites.join(", ")}</p>
