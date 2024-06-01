@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className={isMenuOpen ? "overlay" : "overlayOut"}></div>
       <nav className="navbar flex-jc-sb">
         <div className="header__logo">
-          <a href="#">
+          <a href="/">
             <img src={pokemonSVG} alt="pokemon logo" />
           </a>
         </div>
