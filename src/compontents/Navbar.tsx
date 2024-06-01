@@ -4,6 +4,7 @@ import pokemonSVG from "../images/pokemon-23.svg";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import LinkNavbar from "./LinkNavbar";
 
+
 const Navbar = () => {
   const { toggleMenu, isMobile, isMenuOpen } = useWindowDimensions();
 
@@ -33,14 +34,14 @@ const Navbar = () => {
             isMenuOpen && isMobile ? "" : "hide-for-mobile header__links"
           } ${isMenuOpen && isMobile ? "open-active" : ""}`}
         >
-          <LinkNavbar>Pokédex</LinkNavbar>
-          <LinkNavbar>Pokémon news</LinkNavbar>
+          <LinkNavbar>Pokedex</LinkNavbar>
+          <LinkNavbar>News</LinkNavbar>
           <LinkNavbar>Blog</LinkNavbar>
           <LinkNavbar>Contact</LinkNavbar>
         </div>
         <button className="navBtn hide-for-mobile">
           <span className="background"></span>
-          <span className="text">
+          <span className="text" title="Currently doesn't work!">
             Click to<br></br>Register
           </span>
         </button>
