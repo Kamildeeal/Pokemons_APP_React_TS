@@ -1,4 +1,5 @@
 # React Pokemons
+You can try it live, deployed on vercel: https://kamilpokemonapp.vercel.app/
 ## Introduction
 React Pokemons is a web application that allows users to view and explore Pokémon data fetched from the PokeAPI. Users can also check details of individual Pokémon and add them to their favorites. This project is designed to demonstrate the use of RESTful APIs, React, and TypeScript.
 
@@ -32,4 +33,4 @@ cd react_pokemons
 npm install
 npm start
 ```
-Enjoy
+Enjoy the code.
