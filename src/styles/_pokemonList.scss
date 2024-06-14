@@ -1,16 +1,21 @@
 .pokemonList {
   display: grid;
-  grid-template-columns: repeat(2, 0fr);
-  grid-gap: 20px;
-  column-gap: 120px;
+  grid-template-columns: repeat(
+    2,
+    minmax(0, 1fr)
+  ); /* zmiana z 0fr na minmax(0, 1fr) */
+  grid-gap: 1.25rem; /* 20px */
+  column-gap: 7.5rem; /* 120px */
   justify-content: center;
   text-decoration: none;
 
   @include breakpoint-down(medium) {
-    display: grid;
-    grid-template-columns: repeat(1, 0fr);
-    grid-gap: 20px;
-    column-gap: 120px;
+    grid-template-columns: repeat(
+      1,
+      minmax(0, 1fr)
+    ); /* zmiana z 0fr na minmax(0, 1fr) */
+    grid-gap: 1.25rem; /* 20px */
+    column-gap: 7.5rem; /* 120px */
     justify-content: center;
     text-decoration: none;
   }
@@ -21,18 +26,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.5); /* 5px */
   background-color: rgb(188, 188, 223);
   transition: 0.1s ease-in-out;
-  border-radius: 15px;
-  padding-left: 15px;
+  border-radius: 0.9375rem; /* 15px */
+  padding-left: 0.9375rem; /* 15px */
   font-weight: lighter;
   color: black;
-  width: 420px;
+  width: 26.25rem; /* 420px */
 
   > img {
-    height: 150px;
+    height: 9.375rem; /* 150px */
   }
+
   &:hover {
     cursor: pointer;
     background-color: rgba(144, 144, 223, 0.884);
@@ -55,10 +61,10 @@
 .pokemonContainer button:hover::after {
   content: "Add or remove pokemon from favorites list";
   font-size: 1rem;
-  background-color: #5555554f;
+  background-color: rgba(85, 85, 85, 0.31); /* #5555554f */
   color: white;
-  border-radius: 4px;
-  padding: 5px;
+  border-radius: 0.25rem; /* 4px */
+  padding: 0.3125rem; /* 5px */
   position: absolute;
   transform: translateX(10%);
   transform: translateY(200%);

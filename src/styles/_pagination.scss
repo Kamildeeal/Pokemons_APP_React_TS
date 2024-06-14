@@ -1,33 +1,33 @@
 .pagination {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    gap: 5px;
-    font-size: 1.2rem;
-    padding: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.625rem; /* 10px */
+  gap: 0.3125rem; /* 5px */
+  font-size: 1.2rem;
+  padding: 1.875rem; /* 30px */
 }
 
 .pagination .page-num {
-    padding: 8px 15px;
-    cursor: pointer;
-    border-radius: 3px;
-    font-weight: bold;
+  padding: 0.5rem 0.9375rem; /* 8px 15px */
+  cursor: pointer;
+  border-radius: 0.1875rem; /* 3px */
+  font-weight: bold;
 }
 
 .pagination .page-num:hover {
-    background-color: rgb(39, 173, 129);
-    color: white;
+  background-color: rgb(39, 173, 129);
+  color: white;
 }
 
 .pagination .active {
-    font-weight: bolder;
-    background-color: rgb(39, 173, 129);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 46px;
-    width: 46px;
-    background-size: 30px 30px;
+  font-weight: bolder;
+  background-color: rgb(39, 173, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.875rem; /* 46px */
+  width: 2.875rem; /* 46px */
+  background-size: 1.875rem 1.875rem; /* 30px 30px */
 }

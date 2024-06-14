@@ -1,21 +1,21 @@
 .navBtn {
-  width: 180px;
-  height: 180px;
+  width: 11.25rem; /* 180px */
+  height: 11.25rem; /* 180px */
   position: relative;
   border-radius: 50%;
-  border: 5px solid black;
-  position: relative;
+  border: 0.3125rem solid black; /* 5px */
   top: 4rem;
-  right: 24px;
+  right: 1.5rem; /* 24px */
   font-size: 1.6rem;
   font-weight: bolder;
   color: rgb(46, 46, 46);
   line-height: 5rem;
   cursor: pointer;
   overflow: hidden;
-  &:hover {
-    color: black;
-  }
+}
+
+.navBtn:hover {
+  color: black;
 }
 
 .navBtn .background {
@@ -38,15 +38,15 @@
 .navBtn .text {
   position: relative;
   z-index: 2;
-  overflow:visible;
+  overflow: visible;
 }
 
 .btn-group button {
-  width: 150px;
-  height: 40px;
-  margin: 25px;
-  border-radius: 30px;
-  box-shadow: 3px 3px;
+  width: 9.375rem; /* 150px */
+  height: 2.5rem; /* 40px */
+  margin: 1.5625rem; /* 25px */
+  border-radius: 1.875rem; /* 30px */
+  box-shadow: 0.1875rem 0.1875rem; /* 3px */
   font-weight: bold;
   background-color: aquamarine;
 }
