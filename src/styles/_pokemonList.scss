@@ -35,8 +35,16 @@
   color: black;
   width: 26.25rem; /* 420px */
 
+  @include breakpoint-down(small) {
+    width: 22rem;
+    font-size: 0.8rem;
+  }
+
   > img {
     height: 9.375rem; /* 150px */
+    @include breakpoint-down(small) {
+      height: 7.5rem;
+    }
   }
 
   &:hover {
@@ -71,9 +79,11 @@
   z-index: 1;
 }
 
-.content {
+.content_center {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-height: 60vh;
+  padding: 1rem;
+  align-items: center;
 }

@@ -61,7 +61,7 @@ const PokemonList = () => {
       <Link className="customLink" to={Screen.Favorites}>
         Favorites
       </Link>
-      <div className="content">
+      <div className="content_center">
         <div className="search">
           <h1>#100 Pokemons from Pokedex!</h1>
           <TextField

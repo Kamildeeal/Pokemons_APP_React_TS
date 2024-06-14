@@ -9,6 +9,11 @@
       position: relative;
       z-index: 2;
       margin-left: 1.25rem; /* 20px */
+
+      @include breakpoint-down(small) {
+        width: 10em;
+        margin-right: 2.5rem;
+      }
     }
   }
 

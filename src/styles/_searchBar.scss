@@ -5,4 +5,13 @@
   padding-top: 1.25rem; /* 20px */
   padding-bottom: 1.875rem; /* 30px */
   flex-direction: column;
+
+  > h1 {
+    text-align: center;
+    font-family: monospace;
+
+    @include breakpoint-down(small) {
+      font-size: 1.4rem;
+    }
+  }
 }
