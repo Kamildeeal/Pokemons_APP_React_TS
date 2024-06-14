@@ -29,7 +29,7 @@ const PokemonDetails = () => {
         <div>
           <button onClick={goToPreviousPokemon}>&larr; Previous Pokemon</button>
         </div>
-        <div className="pokemonDetailsContainter">
+        <div className="pokemonDetailsContainer">
           <h2>
             {addLeadingZero(currentPokemon)} {currentPokemon.name}
           </h2>

@@ -9,6 +9,31 @@
   align-items: center;
   justify-content: center;
   flex-grow: 1;
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+
+    > .pokemonDetailsContainer {
+      position: relative;
+      bottom: 110px;
+      margin: 0;
+
+      & > p {
+        max-width: 200px;
+      }
+    }
+
+    & div > button {
+      position: relative;
+      top: 29rem;
+    }
+
+    & > button {
+      position: relative;
+      bottom: 5rem;
+      left: 0.5rem;
+    }
+  }
 }
 
 .details button {
@@ -30,8 +55,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.5); /* 5px */
-  background-color: rgb(188, 188, 223);
   transition: 0.1s ease-in-out;
   border-radius: 0.9375rem; /* 15px */
   font-weight: lighter;
@@ -39,10 +62,18 @@
   width: 25rem; /* 400px */
   height: 31.25rem; /* 500px */
   margin: 1.5rem; /* 24px */
+
+  @include breakpoint-down(small) {
+    width: 21rem;
+    // font-size: 0.9rem;
+  }
 }
 
 .pokemonDetailsContainer img {
-  height: 12.5rem; /* 200px */
+  height: 14.5rem; /* 200px */
+  @include breakpoint-down(small) {
+    height: 12.5rem;
+  }
 }
 
 .pokemonDetailsContainer p {
@@ -58,7 +89,7 @@
   color: black;
   font-size: 1.3rem;
   transition: all 0.2s ease-in-out;
-  margin-left: 1.875rem; /* 30px */
+  // margin-left: 1.875rem; /* 30px */
 
   &:hover {
     color: rgb(51, 50, 50);

@@ -64,8 +64,6 @@
     }
 
     &.col2 > div {
-      margin-bottom: 1.5rem;
-
       &:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -94,6 +92,7 @@
   width: 4.6875rem; /* 75px */
   height: 4.6875rem; /* 75px */
   margin-bottom: 0.9375rem; /* 15px */
+  margin-top: 1.5rem;
 
   > span {
     position: relative;
