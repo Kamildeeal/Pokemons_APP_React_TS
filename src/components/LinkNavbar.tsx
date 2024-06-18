@@ -4,13 +4,19 @@ import { Screen } from "../navigation/screens";
 
 interface LinkNavbarProps {
   to: keyof typeof Screen;
+  onClick?: () => void;
 }
 
 const LinkNavbar = ({
   children,
   to,
-}: React.PropsWithChildren<{ to: keyof typeof Screen }>) => {
-  return <Link to={Screen[to]}>{children}</Link>;
+  onClick,
+}: React.PropsWithChildren<LinkNavbarProps>) => {
+  return (
+    <Link to={Screen[to]} onClick={onClick}>
+      {children}
+    </Link>
+  );
 };
 
 export default LinkNavbar;

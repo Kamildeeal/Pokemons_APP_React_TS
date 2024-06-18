@@ -23,5 +23,6 @@ export default function useWindowDimensions() {
     isMobile,
     isMenuOpen,
     toggleMenu,
+    setIsHamburgerOpen,
   };
 }

@@ -7,7 +7,14 @@ import { Link } from "react-router-dom";
 import { Screen } from "../navigation/screens";
 
 const Navbar = () => {
-  const { toggleMenu, isMobile, isMenuOpen } = useWindowDimensions();
+  const { toggleMenu, isMobile, isMenuOpen, setIsHamburgerOpen } =
+    useWindowDimensions();
+
+  const closeOverlay = () => {
+    if (isMenuOpen) {
+      setIsHamburgerOpen((i) => !i);
+    }
+  };
 
   return (
     <>
@@ -35,10 +42,19 @@ const Navbar = () => {
             isMenuOpen && isMobile ? "" : "hide-for-mobile header__links"
           } ${isMenuOpen && isMobile ? "open-active" : ""}`}
         >
-          <LinkNavbar to="Pokedex">Pokedex</LinkNavbar>
-          <LinkNavbar to="News">News</LinkNavbar>
-          <LinkNavbar to="Blog">Blog</LinkNavbar>
-          <LinkNavbar to="Contact">Contact</LinkNavbar>
+          <LinkNavbar to="Pokedex" onClick={closeOverlay}>
+            Pokedex
+          </LinkNavbar>
+
+          <LinkNavbar to="News" onClick={closeOverlay}>
+            News
+          </LinkNavbar>
+          <LinkNavbar to="Blog" onClick={closeOverlay}>
+            Blog
+          </LinkNavbar>
+          <LinkNavbar to="Contact" onClick={closeOverlay}>
+            Contact
+          </LinkNavbar>
         </div>
         <button className="navBtn hide-for-mobile">
           <span className="background"></span>
