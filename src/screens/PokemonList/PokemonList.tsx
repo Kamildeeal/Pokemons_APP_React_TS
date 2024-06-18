@@ -1,11 +1,11 @@
 import React, { useCallback } from "react";
 import "../../styles/styles.css";
 import ReactPaginate from "react-paginate";
-import { Link } from "react-router-dom";
 import TextField from "@mui/material/TextField";
 import { Bounce, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { usePokemonList } from "./usePokemonList";
+import { Link } from "react-router-dom";
 import { Screen } from "../../navigation/screens";
 
 const PokemonList = () => {

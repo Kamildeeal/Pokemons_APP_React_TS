@@ -13,7 +13,7 @@ root.render(
   <div>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>KW Fetch pokemons app</title>
+      <title>KW Fetch them all!</title>
     </Helmet>
     <App />
   </div>

@@ -3,7 +3,8 @@ import "../styles/styles.css";
 import pokemonSVG from "../images/pokemon-23.svg";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import LinkNavbar from "./LinkNavbar";
-
+import { Link } from "react-router-dom";
+import { Screen } from "../navigation/screens";
 
 const Navbar = () => {
   const { toggleMenu, isMobile, isMenuOpen } = useWindowDimensions();
@@ -13,9 +14,9 @@ const Navbar = () => {
       <div className={isMenuOpen ? "overlay" : "overlayOut"}></div>
       <nav className="navbar flex-jc-sb">
         <div className="header__logo">
-          <a href="/">
+          <Link to={Screen.Root}>
             <img src={pokemonSVG} alt="pokemon logo" />
-          </a>
+          </Link>
         </div>
 
         <a
@@ -34,10 +35,10 @@ const Navbar = () => {
             isMenuOpen && isMobile ? "" : "hide-for-mobile header__links"
           } ${isMenuOpen && isMobile ? "open-active" : ""}`}
         >
-          <LinkNavbar>Pokedex</LinkNavbar>
-          <LinkNavbar>News</LinkNavbar>
-          <LinkNavbar>Blog</LinkNavbar>
-          <LinkNavbar>Contact</LinkNavbar>
+          <LinkNavbar to="Pokedex">Pokedex</LinkNavbar>
+          <LinkNavbar to="News">News</LinkNavbar>
+          <LinkNavbar to="Blog">Blog</LinkNavbar>
+          <LinkNavbar to="Contact">Contact</LinkNavbar>
         </div>
         <button className="navBtn hide-for-mobile">
           <span className="background"></span>
