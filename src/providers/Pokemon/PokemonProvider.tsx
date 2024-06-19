@@ -32,7 +32,9 @@ export const PokemonProvider = ({ children }: PropsWithChildren) => {
     let isMounted = true;
 
     const fetchPokemon = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       if (!isMounted) return;
+
       abortControllerRef.current?.abort();
       abortControllerRef.current = new AbortController();
       setFetching(true);

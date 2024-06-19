@@ -5,6 +5,8 @@
   padding: 2rem;
   text-align: center;
   width: 100%;
+  position: relative;
+  bottom: -50px;
 
   @include breakpoint-up(large) {
     display: grid;

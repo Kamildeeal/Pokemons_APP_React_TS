@@ -69,7 +69,7 @@ const Favourite = () => {
 
   return (
     <div className="favoritesPage">
-      <h1>Favourite Pokemons</h1>
+      <h1>Favorite Pokemons</h1>
       <Link className="goBackLink" to={Screen.Root}>
         ⬅️ Go to Pokemon List
       </Link>
