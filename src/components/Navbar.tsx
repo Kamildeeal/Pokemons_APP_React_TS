@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
 
         <a
-          href=""
+          href="#"
           onClick={toggleMenu}
           className={` header__menu hide-for-desktop ${
             isMenuOpen ? "header__menu_open" : ""
