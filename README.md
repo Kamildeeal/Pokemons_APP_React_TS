@@ -1,6 +1,6 @@
 # React Pokemons
 
-The purpose of this application was to familiarize myself with CRUD operations and data fetching. I opted to use the fetch method instead of React Query due to the application's small size; I believed that more advanced operations and data caching were unnecessary. My goal was to practice working with raw JSON data. I defined all application screens using react-router-dom for routing. SCSS mixins were used to manage screen sizes and improve responsive design. TypeScript was used extensively for type safety. I also decided integrated the MUI/Material-UI library to incorporate a sleek search field functionality.
+The purpose of this application was to work with CRUD operations and data fetching. I opted to use the fetch method instead of React Query due to the application's small size; I believed that more advanced operations and data caching were unnecessary. My goal was to practice working with raw JSON data. I defined all application screens using react-router-dom for routing. SCSS mixins were used to manage screen sizes and improve responsive design. TypeScript was used extensively for type safety. I also decided integrated the MUI/Material-UI library to incorporate a sleek search field functionality.
 
 You can try it live, deployed on vercel: https://kamilpokemonapp.vercel.app/
 
